@@ -105,6 +105,13 @@
     </dependencies>
   </perl>
 
+  <!-- Needed for spice-gtk -->
+  <perl id="perl-text-csv">
+    <branch repo="cpan"
+        module="authors/id/M/MA/MAKAMAKA/Text-CSV-1.21.tar.gz" version="1.21"
+        size="58647" md5sum="46267559f7f6e203e0a60e033c36851e"/>
+  </perl>
+
   <!-- Needed for building Gnome apps from the repository -->
   <autotools id="gnome-common" autogen-sh="configure">
     <branch module="gnome-common/2.28/gnome-common-2.28.0.tar.bz2"
