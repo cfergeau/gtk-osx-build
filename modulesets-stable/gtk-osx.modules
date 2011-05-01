@@ -56,8 +56,8 @@
   </metamodule>
 
   <autotools id="glib" autogen-sh="configure">
-    <branch module="glib/2.27/glib-2.27.3.tar.bz2"  version="2.27.3"
-            hash="sha256:c44177b635e88639361eb1daf7aaa33315a00aaf46db5accf2f11920c7ff1919"/>
+    <branch module="glib/2.28/glib-2.28.6.tar.bz2"  version="2.28.6"
+            hash="sha256:557fb7c39d21b9359fbac51fd6b0b883bc97a2561c0166eef993a4078312f578"/>
     <after>
       <dep package="meta-gtk-osx-bootstrap"/>
       <dep package="gtk-doc"/>
@@ -70,9 +70,9 @@
   </autotools>
 
   <autotools id="gobject-introspection">
-    <branch module="gobject-introspection/0.10/gobject-introspection-0.10.1.tar.bz2"
-            version="0.10.1"
-            hash="sha256:59033bcb428fd507f9b8399424e847ab24d5e1fe5d587f6915be9940fde69890">
+    <branch module="gobject-introspection/0.10/gobject-introspection-0.10.8.tar.bz2"
+            version="0.10.8"
+            hash="sha256:5b1387ff37f03db880a2b1cbd6c6b6dfb923a29468d4d8367c458abf7704c61e">
       <patch file="https://github.com/jralls/gtk-osx-build/raw/master/patches/girscanner-objc.patch" strip="1"/>
     </branch>
     <dependencies>
@@ -87,8 +87,8 @@
              autogenargs="--without-x --with-included-modules=basic-atsui"
              makeargs="-k -C modules; make">
     <!-- The last version that will build on Tiger is 1.24.5 -->
-    <branch version="1.28.3" module="pango/1.28/pango-1.28.3.tar.bz2"
-            hash="sha256:5e278bc9430cc7bb00270f183360d262c5006b51248e8b537ea904573f200632">
+    <branch version="1.28.3" module="pango/1.28/pango-1.28.4.tar.bz2"
+            hash="sha256:7eb035bcc10dd01569a214d5e2bc3437de95d9ac1cfa9f50035a687c45f05a9f">
 <!--    <branch version="1.24.5" module="pango/1.24/pango-1.24.5.tar.bz2"
             hash="sha256:0f733d1ec3e8dafcae152d7ac58f1090bee1fd856176c8fee0e81b0e42392f4e">-->
   <patch file="https://github.com/jralls/gtk-osx-build/raw/master/patches/pangoatsui-fontname.patch" strip="1"/>
@@ -117,8 +117,8 @@
   </autotools>
 
   <autotools id="gdk-pixbuf">
-    <branch module="gdk-pixbuf/2.23/gdk-pixbuf-2.23.0.tar.bz2" version="2.23.0"
-            hash="sha256:e17081abe08e62491e25ce972eaf8f6325307289b9ab55111ccaf64ad058e2d0"/>
+    <branch module="gdk-pixbuf/2.22/gdk-pixbuf-2.22.1.tar.bz2" version="2.22.1"
+            hash="sha256:6ce87eda24af9362307b2593c154d0b660f4e26d0abf2e71d46d0ddd55fd953d"/>
     <after>
       <dep package="pango"/>
     </after>
@@ -127,8 +127,8 @@
   <autotools id="gtk+" autogen-sh="configure"
              autogenargs="--with-gdktarget=quartz"
              autogen-template="autoreconf -fis &amp;&amp; %(srcdir)s/%(autogen-sh)s --prefix %(prefix)s --libdir %(libdir)s %(autogenargs)s">
-    <branch module="gtk+/2.24/gtk+-2.24.0.tar.bz2" version="2.24.0"
-            hash="sha256:cbed1a7b8cd1e471388a00f22557dd061334698a0c1aece11b7ed6541d115606">
+    <branch module="gtk+/2.24/gtk+-2.24.4.tar.bz2" version="2.24.4"
+            hash="sha256:7d3033ad83647079977466d3e8f1a7533f47abd5cc693f01b8797ff43dd407a5">
       <patch file="https://github.com/jralls/gtk-osx-build/raw/master/patches/gtkselection.patch" strip="1"/>
       <patch file="https://github.com/jralls/gtk-osx-build/raw/master/patches/gdkwindow-quartz.patch" strip="1"/>
       <patch file="https://github.com/jralls/gtk-osx-build/raw/master/patches/gtk-introspection.patch" strip="1"/>
