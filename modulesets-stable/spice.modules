@@ -87,14 +87,17 @@
         version="1.5.5" size="1412611"/>
   </distutils>
 
-  <autotools id="spice-gtk">
-    <branch repo="git.gitorious.org" module="spice-gtk/spice-gtk.git"/>
+  <tarball id="spice-gtk" autogenargs="--with-gtk=2.0 --with-audio=gstreamer" >
+    <source
+    href="http://people.freedesktop.org/~teuf/spice-gtk-osx/spice-gtk-0.6.13-57c0-dirty.tar.bz2"
+            hash="sha256:738b45760719b86d6c7de6aba2b878d1fe95e505661e7356f292158957882cf8"
+            md5sum="c14612824180270ea1d3d2abc823ec77" size="702809"/>
     <dependencies>
       <dep package="spice-protocol"/>
       <dep package="celt"/>
       <dep package="pyparsing"/>
     </dependencies>
-  </autotools>
+  </tarball>
 
   <autotools id="vd-agent">
     <branch repo="spice" module="linux/vd_agent"/>
