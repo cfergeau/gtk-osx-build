@@ -96,6 +96,7 @@
       <dep package="spice-protocol"/>
       <dep package="celt"/>
       <dep package="pyparsing"/>
+      <dep package="gtk+"/>
     </dependencies>
   </tarball>
 
