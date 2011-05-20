@@ -87,7 +87,7 @@
         version="1.5.5" size="1412611"/>
   </distutils>
 
-  <tarball id="spice-gtk" autogenargs="--with-gtk=2.0 --with-audio=gstreamer --without-python" >
+  <tarball id="spice-gtk" autogenargs="--with-gtk=2.0 --with-coroutine=gthread --with-audio=gstreamer --without-python" >
     <source
     href="http://people.freedesktop.org/~teuf/spice-gtk-osx/spice-gtk-0.6.13-57c0-dirty.tar.bz2"
             hash="sha256:738b45760719b86d6c7de6aba2b878d1fe95e505661e7356f292158957882cf8"
