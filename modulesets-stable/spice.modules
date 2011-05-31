@@ -170,6 +170,7 @@
     <branch repo="git.gnome.org" revision="gnome-2-30" module="vinagre.git"/>
     <dependencies>
       <dep package="spice-gtk"/>
+      <dep package="gconf"/>
     </dependencies>
   </autotools>
 
