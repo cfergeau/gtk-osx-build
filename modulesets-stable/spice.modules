@@ -167,7 +167,7 @@
   </autotools>
 
   <autotools id="vinagre" autogenargs="--enable-spice">
-    <branch repo="git.gnome.org" module="vinagre.git"/>
+    <branch repo="git.gnome.org" revision="gnome-2-30" module="vinagre.git"/>
     <dependencies>
       <dep package="spice-gtk"/>
     </dependencies>
