@@ -75,8 +75,8 @@
   </autotools>
 
    <autotools id="vala">
-    <branch repo="ftp.gnome.org" module="vala/0.7/vala-0.7.3.tar.bz2"
-            version="0.7.3" md5sum="8e8bb3d30a4f7ca3fab75db82beaa60e"/>
+    <branch repo="ftp.gnome.org" module="vala/0.12/vala-0.12.1.tar.bz2"
+            version="0.12.1" md5sum="bf35262cc611de447147d01cbac33767"/>
     <after>
       <dep package="meta-gtk-osx-bootstrap"/>
       <dep package="meta-gtk-osx-core"/>
